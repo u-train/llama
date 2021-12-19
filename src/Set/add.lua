@@ -3,10 +3,11 @@ local Set = script.Parent
 
 local Llama = Set.Parent
 local t = require(Llama.t)
+local types = require(Llama.types)
 
 local validate = t.table
 
-local function add(set, ...)
+local function add<T>(set: types.Set<T>, ...: types.Set<T>): types.Set<T>
 	assert(validate(set))
 
 	local new = {}

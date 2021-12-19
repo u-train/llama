@@ -3,10 +3,11 @@ local Set = script.Parent
 
 local Llama = Set.Parent
 local t = require(Llama.t)
+local types = require(Llama.types)
 
 local validate = t.table
 
-local function intersection(...)
+local function intersection<T>(...: types.Set<T>): types.Set<T>
 	local new = {}
 	local argCount = select('#', ...)
 	local firstSet = select(1, ...)

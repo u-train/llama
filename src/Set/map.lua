@@ -3,10 +3,11 @@ local Set = script.Parent
 
 local Llama = Set.Parent
 local t = require(Llama.t)
+local types = require(Llama.types)
 
 local validate = t.tuple(t.table, t.callback)
 
-local function map(set, mapper)
+local function map<T1, T2>(set: types.Set<T1>, mapper: (T1) -> T2): types.Set<T2>
 	assert(validate(set, mapper))
 
 	local new = {}

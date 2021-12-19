@@ -3,12 +3,13 @@ local Set = script.Parent
 
 local Llama = Set.Parent
 local t = require(Llama.t)
+local types = require(Llama.types)
 
 local validate = t.table
 
-local function fromList(list)
+local function fromList<T>(list: types.List<T>): types.Set<T>
 	assert(validate(list))
-	
+
 	local set = {}
 
 	for i = 1, #list do
