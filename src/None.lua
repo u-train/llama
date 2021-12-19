@@ -1,3 +1,4 @@
+--!strict
 local None = newproxy(true)
 
 getmetatable(None).__tostring = function()

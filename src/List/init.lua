@@ -1,3 +1,4 @@
+--!strict
 local List = {
 	append = require(script.push),
 	concat = require(script.concat),

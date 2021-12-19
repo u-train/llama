@@ -1,3 +1,4 @@
+--!strict
 local List = script.Parent
 local toSet = require(List.toSet)
 

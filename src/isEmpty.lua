@@ -1,3 +1,4 @@
+--!strict
 local Llama = script.Parent
 local t = require(Llama.t)
 

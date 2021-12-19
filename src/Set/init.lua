@@ -1,3 +1,4 @@
+--!strict
 local Set = {
 	add = require(script.add),
 	copy = require(script.copy),

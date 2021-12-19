@@ -1,3 +1,4 @@
+--!strict
 local Dictionary = script.Parent
 
 local Llama = Dictionary.Parent

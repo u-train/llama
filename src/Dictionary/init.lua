@@ -1,3 +1,4 @@
+--!strict
 local Dictionary = {
 	copy = require(script.copy),
 	copyDeep = require(script.copyDeep),

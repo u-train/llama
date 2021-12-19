@@ -1,3 +1,4 @@
+--!strict
 local Llama = {
 	Dictionary = require(script.Dictionary),
 	List = require(script.List),

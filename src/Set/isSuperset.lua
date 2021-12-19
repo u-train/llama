@@ -1,3 +1,4 @@
+--!strict
 
 local Set = script.Parent
 local isSubset = require(Set.isSubset)

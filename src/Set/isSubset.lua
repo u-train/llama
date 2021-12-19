@@ -1,3 +1,4 @@
+--!strict
 
 local Set = script.Parent
 
