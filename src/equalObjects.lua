@@ -1,5 +1,7 @@
 --!strict
-local function equalObjects(...)
+local types = require(script.Parent.types)
+
+local function equalObjects(...: types.Table)
 	local firstObject = select(1, ...)
 
 	for i = 2, select('#', ...) do
